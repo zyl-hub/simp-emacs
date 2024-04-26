@@ -1,0 +1,2 @@
+* Personnal emacs config
+On this occasion, I aim to suffice my needs with a minimal array of packages and configurations.

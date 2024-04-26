@@ -25,3 +25,4 @@
 (require 'init-basic)
 (require 'init-corfu)
 (require 'init-org)
+(require 'init-magit)
