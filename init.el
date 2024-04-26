@@ -4,6 +4,7 @@
 
 (setq custom-file (locate-user-emacs-file "custom.el"))
 
+;; bootstrap init
 (defvar bootstrap-version)
 (let ((bootstrap-file
        (expand-file-name
@@ -20,4 +21,7 @@
       (eval-print-last-sexp)))
   (load bootstrap-file nil 'nomessage))
 
+(require 'init-setup)
+(require 'init-basic)
+(require 'init-corfu)
 (require 'init-org)
