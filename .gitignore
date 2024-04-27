@@ -3,3 +3,6 @@ org-persist
 straight
 tutorial
 /server/
+/places
+/transient/
+/url/

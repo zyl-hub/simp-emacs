@@ -1,3 +1,4 @@
-(straight-use-package 'magit)
+(setup magit
+  (:straight magit))
 
 (provide 'init-magit)
