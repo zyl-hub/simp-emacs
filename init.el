@@ -23,7 +23,12 @@
 
 (require 'init-setup)
 (require 'init-basic)
-(require 'init-corfu)
+;; use corfu with lsp-mode need human intervention
+;; (require 'init-corfu)
+(require 'init-company)
+(require 'init-lsp-mode)
 (require 'init-org)
 (require 'init-magit)
 (require 'init-beancount)
+(require 'init-treesitter)
+(require 'init-flycheck)
