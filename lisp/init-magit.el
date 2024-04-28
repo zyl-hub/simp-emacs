@@ -1,3 +1,5 @@
+;;-*- lexical-binding: t -*-
+
 (setup magit
   (:straight magit))
 

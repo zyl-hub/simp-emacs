@@ -1,8 +1,13 @@
+;;-*- lexical-binding: t -*-
+
 (setup emacs
   (:global [f5] (lambda() (interactive) (find-file user-init-file)))
   (set-language-environment "utf-8")
   ;; (fido-vertical-mode)
-  (save-place-mode 1))
+  (setq default-directory (cond ((eq system-type 'windows-nt) "c:/project/")
+			      ((eq system-type 'gnu/linux) "~")))
+  (save-place-mode 1)
+  (desktop-save-mode 1))
 
 (setup electric-pair-mode
   (:hook-into prog-mode))

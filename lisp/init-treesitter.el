@@ -1,3 +1,5 @@
+;;-*- lexical-binding: t -*-
+
 (setup treesit-auto
   (:straight treesit-auto)
   (:with-function global-treesit-auto-mode

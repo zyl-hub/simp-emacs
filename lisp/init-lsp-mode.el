@@ -1,3 +1,5 @@
+;;-*- lexical-binding: t -*-
+
 (setup lsp-mode
   (:straight lsp-mode))
 

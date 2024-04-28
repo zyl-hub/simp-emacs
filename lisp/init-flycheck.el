@@ -1,7 +1,6 @@
-(setup flycheck
-  (:straight flycheck)
-  (global-flycheck-mode))
+;;-*- lexical-binding: t -*-
 
-(setup flycheck-tree-sitter)
+(setup flycheck
+  (:straight flycheck))
 
 (provide 'init-flycheck)

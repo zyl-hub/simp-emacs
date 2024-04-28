@@ -1,3 +1,5 @@
+;;-*- lexical-binding: t -*-
+
 (setup beancount-mode
   (:straight (beancount-mode
 	      :host github

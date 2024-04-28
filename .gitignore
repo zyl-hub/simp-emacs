@@ -9,3 +9,6 @@ tutorial
 /.lsp-session-v1
 /projects
 /tree-sitter/
+/.emacs.desktop
+/.emacs.desktop.lock
+/bookmarks
