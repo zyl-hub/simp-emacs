@@ -32,3 +32,5 @@
 (require 'init-beancount)
 (require 'init-treesitter)
 (require 'init-flycheck)
+;; (require 'init-pyvenv)
+(require 'init-conda)
