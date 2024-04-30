@@ -13,3 +13,4 @@ tutorial
 /.emacs.desktop.lock
 /bookmarks
 /eshell/
+/reproduce.el

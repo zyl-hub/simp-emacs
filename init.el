@@ -27,6 +27,7 @@
 ;; (require 'init-corfu)
 (require 'init-company)
 (require 'init-lsp-mode)
+(require 'init-python)
 (require 'init-org)
 (require 'init-magit)
 (require 'init-beancount)
