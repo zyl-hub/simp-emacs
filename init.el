@@ -34,3 +34,6 @@
 (require 'init-flycheck)
 ;; (require 'init-pyvenv)
 (require 'init-conda)
+
+(when (file-exists-p custom-file)
+  (load custom-file))
