@@ -6,7 +6,8 @@
 	      :type git
 	      :repo "necaris/conda.el"))
   (custom-set-variables
-   '(conda-anaconda-home "C:/Users/10160/scoop/apps/miniconda3/current"))
+   '(conda-anaconda-home (cond ((eq system-type 'windows-nt) "C:/Users/10160/scoop/apps/miniconda3/current")
+			       ((eq system-type 'gnu/linux) "~/.conda"))))
   (conda-env-initialize-interactive-shells)
   (conda-env-initialize-eshell)
   ;; (conda-env-autoactivate-mode t)

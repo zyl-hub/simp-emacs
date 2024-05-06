@@ -5,7 +5,7 @@
   (set-language-environment "utf-8")
   ;; (fido-vertical-mode)
   (setq default-directory (cond ((eq system-type 'windows-nt) "c:/project/")
-			      ((eq system-type 'gnu/linux) "~")))
+			      ((eq system-type 'gnu/linux) "~/")))
   (save-place-mode 1)
   (desktop-save-mode 1)
   (setq make-backup-files nil))
