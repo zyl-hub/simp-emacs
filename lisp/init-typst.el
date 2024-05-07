@@ -9,7 +9,8 @@
 	      :type git
 	      :host sourcehut
 	      :repo "meow_king/typst-ts-mode"
-	      :files (:defaults "*.el))"))))
+	      :files (:defaults "*.el))")))
+  (:hook lsp-mode))
 
 (setup websocket
   (:straight websocket))
@@ -21,16 +22,14 @@
 	      :repo "havarddj/typst-preview.el")))
 
 (setup tinymist
-  (:hooks typst-mode-hook    lsp
-          typst-ts-mode-hook lsp)
-  (:after* typst-ts-mode
-	   (require 'lsp-mode)
-	   (add-to-list 'lsp-language-id-configuration
-			'("\\.typ$" . "typst"))
-	   (lsp-register-client
-	    (make-lsp-client
-             :new-connection (lsp-stdio-connection (lambda () (executable-find "tinymist")))
-             :major-modes '(typst-mode typst-ts-mode)
-             :server-id 'tinymist))))
+  (with-eval-after-load 'typst-ts-mode
+    (require 'lsp-mode)
+    (add-to-list 'lsp-language-id-configuration
+		 '("\\.typ$" . "typst"))
+    (lsp-register-client
+     (make-lsp-client
+      :new-connection (lsp-stdio-connection (lambda () (executable-find "tinymist")))
+      :major-modes '(typst-mode typst-ts-mode)
+      :server-id 'tinymist))))
 
 (provide 'init-typst)
