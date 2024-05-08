@@ -19,4 +19,10 @@ first RECIPE's package."
                      (car recipe)
                    recipe))))
 
+(setup-define :after*
+  (lambda (feature &rest body)
+    `(with-eval-after-load ',feature ,@body))
+  :documentation "Eval BODY after FEATURE."
+  :indent 1)
+
 (provide 'init-setup)

@@ -14,4 +14,9 @@
 	  ("p" "Paper" entry (file+datetree "~/org/paper.org")
 	   "* %?\nEntered on %U\n %i\n %a"))))
 
+(setup org-modern
+  (:straight org-modern)
+  (setq org-modern-star 'replace)
+  (with-eval-after-load 'org (global-org-modern-mode)))
+
 (provide 'init-org)

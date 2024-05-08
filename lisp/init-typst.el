@@ -20,16 +20,19 @@
 	      :type git
 	      :host github
 	      :repo "havarddj/typst-preview.el")))
-
 (setup tinymist
-  (with-eval-after-load 'typst-ts-mode
-    (require 'lsp-mode)
-    (add-to-list 'lsp-language-id-configuration
-		 '("\\.typ$" . "typst"))
-    (lsp-register-client
-     (make-lsp-client
-      :new-connection (lsp-stdio-connection (lambda () (executable-find "tinymist")))
-      :major-modes '(typst-mode typst-ts-mode)
-      :server-id 'tinymist))))
+  (eval-after-load 'typst-ts-mode
+    #'(lambda nil
+	(require 'lsp-mode)
+	(add-to-list 'lsp-language-id-configuration
+		     '("\\.typ$" . "typst"))
+	(lsp-register-client
+	 (make-lsp-client :new-connection
+			  (lsp-stdio-connection
+			   #'(lambda nil
+			       (executable-find "tinymist")))
+			  :major-modes
+			  '(typst-mode typst-ts-mode)
+			  :server-id 'tinymist)))))
 
 (provide 'init-typst)
