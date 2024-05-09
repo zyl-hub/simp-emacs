@@ -38,5 +38,7 @@
 (require 'init-conda)
 (require 'init-typst)
 
-(when (file-exists-p custom-file)
-  (load custom-file))
+;; (when (file-exists-p custom-file)
+  ;; (load custom-file))
+
+;;; init.el ends here
