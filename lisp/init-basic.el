@@ -24,8 +24,14 @@
 			      ((eq system-type 'gnu/linux) "~/")))
   (save-place-mode 1)
   ;; (desktop-save-mode 1)
-  (setq make-backup-files nil)
-  (en-set-font))
+  (setq make-backup-files nil))
+
+(setup font
+  ;;; magic to make font settings work for emacsclient
+  (when (display-graphic-p)
+    (en-set-font))
+  (add-hook 'window-setup-hook #'en-set-font)
+  (add-hook 'server-after-make-frame-hook #'en-set-font))
 
 (setup electric-pair-mode
   (:hook-into prog-mode))
