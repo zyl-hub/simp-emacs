@@ -30,8 +30,8 @@
   ;;; magic to make font settings work for emacsclient
   (when (display-graphic-p)
     (en-set-font))
-  (add-hook 'window-setup-hook #'en-set-font)
-  (add-hook 'server-after-make-frame-hook #'en-set-font))
+  (:with-function en-set-font
+    (:hook-into window-setup-hook server-after-make-frame-hook)))
 
 (setup electric-pair-mode
   (:hook-into prog-mode))

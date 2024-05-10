@@ -4,7 +4,6 @@
   (:global "C-c c" #'org-capture)
   (setq org-startup-indented t)
   (setq org-startup-with-latex-preview t)
-  (auto-fill-mode)
   (setq org-capture-templates nil)
   (setq org-capture-templates
 	'(("t" "Todo" entry (file+headline "~/org/gtd.org" "Tasks")
