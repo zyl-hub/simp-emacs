@@ -20,6 +20,7 @@
 	      :type git
 	      :host github
 	      :repo "havarddj/typst-preview.el")))
+
 (setup tinymist
   (eval-after-load 'typst-ts-mode
     #'(lambda nil

@@ -30,7 +30,7 @@
 (require 'init-python)
 (require 'init-org)
 (require 'init-magit)
-
+(require 'init-latex)
 (require 'init-beancount)
 (require 'init-treesitter)
 (require 'init-flycheck)
