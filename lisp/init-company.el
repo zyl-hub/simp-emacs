@@ -2,7 +2,7 @@
 
 (setup company
   (:straight company)
-  (global-company-mode (:hook-into after-init-hook))
+  (company-mode (:hook-into prog-mode-hook))
   (setq company-idle-delay 0.1))
 
 (provide 'init-company)

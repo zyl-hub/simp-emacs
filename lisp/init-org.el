@@ -7,12 +7,15 @@
 	      :repo "https://git.tecosaur.net/tec/org-mode.git"))
   (:global "C-c c" #'org-capture)
   (setq org-startup-indented t)
-  (setq org-latex-packages-alist
-      '(("" "amssymb" t)
-        ;; Add other packages here
-        ))
   (setq org-startup-with-latex-preview t)
   ;; (setq org-latex-preview-auto-mode t)
+  (setq org-latex-packages-alist
+	'(("" "amssymb" t)
+	  ("" "amsmath" t
+	   ("pdflatex"))
+          ;; Add other packages here
+          ))
+  (setq org-preview-latex-default-process 'dvisvgm)
   (setq org-capture-templates nil)
   (:with-function org-latex-preview-auto-mode
     (:hook-into org-mode-hook))
