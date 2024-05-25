@@ -36,4 +36,10 @@
 (setup electric-pair-mode
   (:hook-into prog-mode))
 
+(setup avy
+  (:straight avy)
+  (:global "M-g w" #'avy-goto-word-1)
+  (:global "M-g c" #'avy-goto-char-2)
+  (:global "M-g l" #'avy-goto-line))
+
 (provide 'init-basic)
