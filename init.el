@@ -34,8 +34,8 @@
 (require 'init-beancount)
 (require 'init-treesitter)
 (require 'init-flycheck)
-;; (require 'init-pyvenv)
-(require 'init-conda)
+(require 'init-pyvenv)
+;; (require 'init-conda)
 (require 'init-typst)
 
 ;; (when (file-exists-p custom-file)

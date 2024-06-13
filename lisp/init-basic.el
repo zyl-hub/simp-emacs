@@ -6,15 +6,15 @@
    :font (font-spec :family "CMU Typewriter Text"
                     :weight 'normal
                     :slant 'normal
-                    :size (cond ((eq system-type 'gnu/linux) 20.0)
-                                ((eq system-type 'windows-nt) 18.0))))
+                    :size (cond ((eq system-type 'gnu/linux) 18.0)
+                                ((eq system-type 'windows-nt) 16.0))))
   (set-face-attribute
    'italic nil
    :font (font-spec :family "CMU Classical Serif"
                     :weight 'normal
                     :slant 'italic
-                    :size (cond ((eq system-type 'gnu/linux) 20.0)
-                                ((eq system-type 'windows-nt) 18.0)))))
+                    :size (cond ((eq system-type 'gnu/linux) 18.0)
+                                ((eq system-type 'windows-nt) 16.0)))))
 
 (setup emacs
   (:global [f5] (lambda() (interactive) (find-file user-init-file)))
