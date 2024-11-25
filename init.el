@@ -26,6 +26,7 @@
 ;; use corfu with lsp-mode need human intervention
 ;; (require 'init-corfu)
 (require 'init-company)
+(require 'init-yasnippet)
 (require 'init-lsp-mode)
 (require 'init-python)
 (require 'init-org)
