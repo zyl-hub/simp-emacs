@@ -1,8 +1,8 @@
 ;;-*- lexical-binding: t -*-
 
-;; (add-to-list 'treesit-language-source-alist
-             ;; '(typst "https://github.com/uben0/tree-sitter-typst"))
-;; (treesit-install-language-grammar 'typst)
+(add-to-list 'treesit-language-source-alist
+             '(typst "https://github.com/uben0/tree-sitter-typst"))
+(treesit-install-language-grammar 'typst)
 
 (setup typst-ts-mode
   (:straight (typst-ts-mode
