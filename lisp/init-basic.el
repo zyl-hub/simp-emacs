@@ -3,8 +3,8 @@
 (defun en-set-font ()
   (set-face-attribute
    'default nil
-   ;; :font (font-spec :family "CMU Typewriter Text"
-   :font (font-spec :family "MonaspiceNe NF"
+   :font (font-spec :family "CMU Typewriter Text"
+   ;; :font (font-spec :family "MonaspiceNe NF"
                     :weight 'normal
                     :slant 'normal
                     :size (cond ((eq system-type 'gnu/linux) 14.0)
