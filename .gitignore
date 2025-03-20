@@ -15,3 +15,4 @@ tutorial
 /eshell/
 /reproduce.el
 /eln-cache/
+.cache/lsp/npm/vscode-langservers-extracted
