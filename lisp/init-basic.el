@@ -11,7 +11,8 @@
                                 ((eq system-type 'windows-nt) 12.0))))
   
   (set-fontset-font t '(#x4e00 . #x9fff)
-		    (font-spec :family "LXGW Wenkai"
+		    ;; (font-spec :family "LXGW Wenkai"
+		    (font-spec :family "Noto Sans CJK SC"
 			       :weight 'normal
 			       :slant 'normal
 			       :size (cond ((eq system-type 'gnu/linux) 14.0)
