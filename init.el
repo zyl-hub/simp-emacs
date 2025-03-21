@@ -41,6 +41,7 @@
 (require 'init-pyvenv)
 ;; (require 'init-conda)
 (require 'init-typst)
+(require 'init-formatter)
 
 ;; (when (file-exists-p custom-file)
   ;; (load custom-file))
