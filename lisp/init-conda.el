@@ -17,9 +17,9 @@
   )
 
 ;; (defun my-conda-env-change-advice (orig-fun &rest args)
-  ;; (let ((result (apply orig-fun args)))
-    ;; (lsp-workspace-restart)
-    ;; result))
+;; (let ((result (apply orig-fun args)))
+;; (lsp-workspace-restart)
+;; result))
 
 ;; (advice-add 'conda-env-activate :after #'my-conda-env-change-advice)
 

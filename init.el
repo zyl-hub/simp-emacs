@@ -42,8 +42,9 @@
 ;; (require 'init-conda)
 (require 'init-typst)
 (require 'init-formatter)
+(require 'init-gptel)
 
 ;; (when (file-exists-p custom-file)
-  ;; (load custom-file))
+;; (load custom-file))
 
 ;;; init.el ends here
