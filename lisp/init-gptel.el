@@ -4,7 +4,7 @@
   (:straight gptel)
   (setq gptel-default-mode 'org-mode)
   (setq gptel-backend
-	(gptel-make-deepseek "DeepSeek-R1"      ;Any name you want
+	(gptel-make-deepseek "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B"      ;Any name you want
 	  :host "aihubmix.com"
 	  :endpoint "/v1/chat/completions"
 	  :stream t
