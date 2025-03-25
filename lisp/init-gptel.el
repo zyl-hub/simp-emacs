@@ -6,7 +6,7 @@
 
   ;; Register Deepseek model
   (setq
-   gptel-model 'deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
+   gptel-model 'DeepSeek-R1
    gptel-backend (gptel-make-deepseek "DeepSeek"      ;Any name you want
 		   :host "aihubmix.com"
 		   :endpoint "/v1/chat/completions"
@@ -17,27 +17,15 @@
 			     )))
   
   ;; Register Gemini 2.0 Flash model
-  (gptel-make-openai "Gemini"
-    :host "aihubmix.com"
-    :endpoint "/v1/chat/completions"
-    :key "sk-DQiMnpBL8xZTqiqM6f8c937f4c774e1c98B42d164bBe2466"
-    :models '(gemini-2.0-flash))
-
-  ;; Register Claude 3.7 Sonnet model
-  (gptel-make-openai "Anthropic"
+  (gptel-make-openai "Aihubmix"
     :host "aihubmix.com"
     :endpoint "/v1/chat/completions"
     :stream t
     :key "sk-DQiMnpBL8xZTqiqM6f8c937f4c774e1c98B42d164bBe2466"
-    :models '(claude-3-7-sonnet-20250219))
-
-  ;; Register O3-Mini model (example for OpenAI-compatible provider)
-  (gptel-make-openai "Openai"
-    :host "aihubmix.com"
-    :endpoint "/v1/chat/completions"
-    :stream t
-    :key "sk-DQiMnpBL8xZTqiqM6f8c937f4c774e1c98B42d164bBe2466"
-    :models '(o3-mini))
+    :models '(gemini-2.0-flash
+	      gemini-2.0-flash-exp
+	      claude-3-7-sonnet-20250219
+	      o3-mini))
   )
 
 (provide 'init-gptel)
