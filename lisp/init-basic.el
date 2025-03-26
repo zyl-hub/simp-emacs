@@ -12,7 +12,8 @@
   
   (set-fontset-font t '(#x4e00 . #x9fff)
 		    ;; (font-spec :family "LXGW Wenkai"
-		    (font-spec :family "Noto Sans CJK SC"
+		    (font-spec :family (cond ((eq system-type 'gnu/linux) "Noto Sans CJK SC")
+					     ((eq system-type 'windows-nt) "Noto Sans SC"))
 			       :weight 'normal
 			       :slant 'normal
 			       :size (cond ((eq system-type 'gnu/linux) 14.0)
@@ -29,6 +30,10 @@
 (setup emacs
   (:global [f5] (lambda() (interactive) (find-file user-init-file)))
   (set-language-environment "utf-8")
+  ;; (when (memq system-type '(cygwin windows-nt ms-dos))
+    ;; (setq default-process-coding-system '(gbk . gbk)))
+  ;; (add-to-list 'process-coding-system-alist
+	       ;; '("cmdproxy" utf-8 . gbk))
   ;; (fido-vertical-mode)
   (setq default-directory (cond ((eq system-type 'windows-nt) "c:/project/")
 			      ((eq system-type 'gnu/linux) "~/")))
@@ -54,3 +59,4 @@
   (:global "M-g l" #'avy-goto-line))
 
 (provide 'init-basic)
+
