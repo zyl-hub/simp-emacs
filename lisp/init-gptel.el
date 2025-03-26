@@ -13,7 +13,8 @@
 		   :stream t
 		   :key "sk-DQiMnpBL8xZTqiqM6f8c937f4c774e1c98B42d164bBe2466"
 		   :models '(deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
-			     DeepSeek-R1 ;后面可以补充任意的模型名
+			     DeepSeek-R1
+			     DeepSeek-V3 ;后面可以补充任意的模型名
 			     )))
   
   ;; Register Gemini 2.0 Flash model
