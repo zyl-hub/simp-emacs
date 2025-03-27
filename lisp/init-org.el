@@ -19,6 +19,7 @@
   (setq org-capture-templates nil)
   ;; (:with-function org-latex-preview-auto-mode
   ;;   (:hook-into org-mode-hook))
+  (setq org-agenda-files '("~/org/gtd.org"))
 
   (setq org-capture-templates
 	'(("t" "Todo" entry (file+headline "~/org/gtd.org" "Tasks")
