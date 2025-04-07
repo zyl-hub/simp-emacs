@@ -43,6 +43,7 @@
 (require 'init-typst)
 (require 'init-formatter)
 (require 'init-gptel)
+(require 'init-telega)
 
 ;; (when (file-exists-p custom-file)
 ;; (load custom-file))

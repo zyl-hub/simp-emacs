@@ -29,4 +29,7 @@
 	      o3-mini))
   )
 
+(setup gptel-mode
+  (:hook visual-line-mode))
+
 (provide 'init-gptel)
