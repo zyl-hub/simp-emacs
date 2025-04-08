@@ -19,8 +19,8 @@
 					     ((eq system-type 'windows-nt) "Noto Sans SC"))
 			       :weight 'normal
 			       :slant 'normal
-			       :size (cond ((eq system-type 'gnu/linux) 14.0)
-					   ((eq system-type 'windows-nt) 12.0))))
+			       :size (cond ((eq system-type 'gnu/linux) 12.0)
+					   ((eq system-type 'windows-nt) 10.0))))
 
   ;; (set-fontset-font t 'symbol
   ;; (font-spec :family "Noto Color Emoji"))
@@ -67,21 +67,25 @@
   (:global "M-g c" #'avy-goto-char-2)
   (:global "M-g l" #'avy-goto-line))
 
-(setup doom-themes
-  (:straight doom-themes)
-  (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
-        doom-themes-enable-italic t) ; if nil, italics is universally disabled
-  (load-theme 'doom-one t)
+(setup theme
+  (:straight ef-themes)
+  (load-theme 'ef-frost t))
 
-  ;; Enable flashing mode-line on errors
-  (doom-themes-visual-bell-config)
-  ;; Enable custom neotree theme (nerd-icons must be installed!)
-  (doom-themes-neotree-config)
-  ;; or for treemacs users
-  (setq doom-themes-treemacs-theme "doom-atom") ; use "doom-colors" for less minimal icon theme
-  (doom-themes-treemacs-config)
-  ;; Corrects (and improves) org-mode's native fontification.
-  (doom-themes-org-config))
+;; (setup doom-themes
+;;   (:straight doom-themes)
+;;   (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
+;;         doom-themes-enable-italic t) ; if nil, italics is universally disabled
+;;   (load-theme 'doom-one t)
+
+;;   ;; Enable flashing mode-line on errors
+;;   (doom-themes-visual-bell-config)
+;;   ;; Enable custom neotree theme (nerd-icons must be installed!)
+;;   (doom-themes-neotree-config)
+;;   ;; or for treemacs users
+;;   (setq doom-themes-treemacs-theme "doom-atom") ; use "doom-colors" for less minimal icon theme
+;;   (doom-themes-treemacs-config)
+;;   ;; Corrects (and improves) org-mode's native fontification.
+;;   (doom-themes-org-config))
 
 (provide 'init-basic)
 
