@@ -8,7 +8,7 @@
                     :weight 'normal
                     :slant 'normal
                     :size (cond ((eq system-type 'gnu/linux) 14.0)
-                                ((eq system-type 'windows-nt) 12.0))))
+                                ((eq system-type 'windows-nt) 14.0))))
 
   (set-fontset-font t 'unicode
 		    (font-spec :family "Noto Color Emoji"))
@@ -20,7 +20,7 @@
 			       :weight 'normal
 			       :slant 'normal
 			       :size (cond ((eq system-type 'gnu/linux) 12.0)
-					   ((eq system-type 'windows-nt) 10.0))))
+					   ((eq system-type 'windows-nt) 12.0))))
 
   ;; (set-fontset-font t 'symbol
   ;; (font-spec :family "Noto Color Emoji"))
@@ -32,7 +32,7 @@
                     :weight 'normal
                     :slant 'italic
                     :size (cond ((eq system-type 'gnu/linux) 14.0)
-                                ((eq system-type 'windows-nt) 12.0)))))
+                                ((eq system-type 'windows-nt) 14.0)))))
 
 (setup emacs
   (:global [f5] (lambda() (interactive) (find-file user-init-file)))
