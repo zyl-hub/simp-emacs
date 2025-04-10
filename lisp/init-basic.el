@@ -71,6 +71,9 @@
   (:straight ef-themes)
   (load-theme 'ef-frost t))
 
+(setup writeroom-mode
+  (:straight writeroom-mode))
+
 ;; (setup doom-themes
 ;;   (:straight doom-themes)
 ;;   (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
