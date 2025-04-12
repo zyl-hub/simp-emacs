@@ -33,6 +33,8 @@
 (setup lsp-mode
   (:straight lsp-mode)
   (setq gc-cons-threshold 100000000)
-  (setq read-process-output-max (* 1024 1024)))
+  (setq read-process-output-max (* 1024 1024))
+  (setq lsp-signature-auto-activate t)
+  (setq lsp-signature-doc-lines 1))
 
 (provide 'init-lsp-mode)
