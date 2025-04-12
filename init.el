@@ -28,7 +28,10 @@
 (require 'init-company)
 (require 'init-yasnippet)
 (require 'init-lsp-mode)
+(require 'init-yasnippet)
 (require 'init-python)
+(require 'init-rust)
+(require 'init-web)
 (require 'init-org)
 (require 'init-magit)
 (require 'init-latex)
@@ -38,8 +41,11 @@
 (require 'init-pyvenv)
 ;; (require 'init-conda)
 (require 'init-typst)
+(require 'init-formatter)
+(require 'init-gptel)
+(require 'init-telega)
 
 ;; (when (file-exists-p custom-file)
-  ;; (load custom-file))
+;; (load custom-file))
 
 ;;; init.el ends here

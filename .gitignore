@@ -16,3 +16,5 @@ tutorial
 /reproduce.el
 /eln-cache/
 /.org-id-locations
+.cache/lsp/npm/vscode-langservers-extracted
+/elpa/
